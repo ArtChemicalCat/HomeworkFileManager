@@ -9,17 +9,20 @@ import UIKit
 import SnapKit
 
 final class ChangePasswordViewController: UIViewController {
+    // MARK: - Views
     private lazy var passwordField = CustomTextField()
         .with { $0.isSecureTextEntry = true }
     private lazy var changePasswordButton = CustomButton(action: changePassword)
         .with { $0.setTitle("Изменить пароль", for: .normal) }
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
         view.backgroundColor = .systemBackground
     }
     
+    // MARK: - Metods
     private func changePassword() {
         guard let password = passwordField.text,
               password.count > 3 else {

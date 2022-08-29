@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class SortingTableViewCell: UITableViewCell {
+    // MARK: - Views
     let titleLabel = UILabel()
         .with {
             $0.text = "Сортировать в алфавитном порядке"
@@ -20,9 +21,10 @@ final class SortingTableViewCell: UITableViewCell {
             $0.preferredStyle = .sliding
             $0.setOn(true, animated: true)
         }
-    
+    // MARK: - Properties
     var toggleSortingOn: ((_ isOn: Bool) -> Void)?
     
+    // MARK: - Initialisation
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureCell()
@@ -30,11 +32,13 @@ final class SortingTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) { fatalError() }
     
+    // MARK: - Actions
     @objc
     private func toggleSorting(_ switch: UISwitch) {
         toggleSortingOn?(`switch`.isOn)
     }
     
+    // MARK: - Metods
     private func configureCell() {
         contentView.addSubviews(titleLabel, toggleSort)
         selectionStyle = .none

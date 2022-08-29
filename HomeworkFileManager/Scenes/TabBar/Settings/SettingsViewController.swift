@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class SettingsViewController: UIViewController {
+    // MARK: - Veiws
     private lazy var list = UITableView()
         .with {
             $0.rowHeight = 60
@@ -17,8 +18,10 @@ final class SettingsViewController: UIViewController {
             $0.delegate = self
         }
     
+    // MARK: - Properties
     private let viewModel: SettingsViewModel
     
+    // MARK: - Initialisation
     init(viewModel: SettingsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -26,12 +29,14 @@ final class SettingsViewController: UIViewController {
     
     required init?(coder: NSCoder) { fatalError() }
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
         view.backgroundColor = .systemBackground
     }
     
+    // MARK: - Metods
     private func layout() {
         view.addSubview(list)
         
@@ -41,6 +46,7 @@ final class SettingsViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 1 {
@@ -50,7 +56,8 @@ extension SettingsViewController: UITableViewDelegate {
     }
 }
 
-extension SettingsViewController: UITableViewDataSource {
+// MARK: - UITableViewDelegate
+extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 2 }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,6 +77,4 @@ extension SettingsViewController: UITableViewDataSource {
             return cell
         }
     }
-    
-    
 }
