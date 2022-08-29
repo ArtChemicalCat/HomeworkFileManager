@@ -7,9 +7,7 @@
 
 import UIKit
 
-final class PhotoTableViewCell: UITableViewCell {
-    static var id: String { String(describing: self) }
-    
+final class PhotoTableViewCell: UITableViewCell {    
     private let photoView = UIImageView()
         .with {
             $0.translatesAutoresizingMaskIntoConstraints = false

@@ -18,6 +18,10 @@ class DocumentsViewController: UIViewController {
         }
     
     // MARK: - Properties
+    @AppStorage(key: "sorting")
+    private var shouldSortAlphabetically = true
+    private var observation: NSObject?
+    
     private lazy var photosURLs: [URL] = [] {
         didSet { list.reloadData() }
     }
@@ -28,6 +32,7 @@ class DocumentsViewController: UIViewController {
         layout()
         configureNavigationBar()
         loadImages()
+        observeUserDefaults()
     }
     
     // MARK: - Metods
@@ -37,7 +42,23 @@ class DocumentsViewController: UIViewController {
             .contentsOfDirectory(
                 at: FileManager.documentDirectoryURL,
                 includingPropertiesForKeys: nil)) else { return }
-        self.photosURLs = photosURLs
+        if shouldSortAlphabetically {
+            self.photosURLs = photosURLs.sorted(by: { $0.path() < $1.path() })
+        } else {
+            self.photosURLs = photosURLs.sorted(by: { $0.path() > $1.path() })
+        }
+    }
+    
+    private func observeUserDefaults() {
+        observation = $shouldSortAlphabetically.observe { [weak self] isOn in
+            guard let self = self,
+            let isOn = isOn else { return }
+            if isOn {
+                self.photosURLs = self.photosURLs.sorted(by: { $0.path() < $1.path() })
+            } else {
+                self.photosURLs = self.photosURLs.sorted(by: { $0.path() > $1.path() })
+            }
+        }
     }
     
     // MARK: - Actions
@@ -60,6 +81,7 @@ class DocumentsViewController: UIViewController {
             action: #selector(addPhoto))
         
         navigationItem.rightBarButtonItem = addPhotoButton
+        navigationItem.backBarButtonItem?.isHidden = true
     }
     
     private func layout() {
@@ -129,9 +151,9 @@ extension DocumentsViewController: UIImagePickerControllerDelegate, UINavigation
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
     ) {
         guard let image = info[.originalImage] as? UIImage,
+              let name = (info[.imageURL] as? URL)?.lastPathComponent,
         let data = image.pngData() else { return }
         
-        let name = String(describing: image)
         do {
             try data.write(to: FileManager.documentDirectoryURL.appending(path: name))
         } catch {
