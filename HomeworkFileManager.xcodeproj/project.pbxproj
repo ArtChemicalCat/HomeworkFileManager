@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249FDA7028BCBFE100D12CF8 /* UIAllertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA6F28BCBFE100D12CF8 /* UIAllertController+Extensions.swift */; };
+		249FDA7228BCCED900D12CF8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA7128BCCED900D12CF8 /* AppState.swift */; };
+		249FDA7928BCEB5500D12CF8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA7828BCEB5500D12CF8 /* SettingsViewController.swift */; };
+		249FDA7E28BCF25300D12CF8 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA7D28BCF25300D12CF8 /* AppStore.swift */; };
+		249FDA8028BCF72200D12CF8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA7F28BCF72200D12CF8 /* SettingsViewModel.swift */; };
+		249FDA8228BCF7D800D12CF8 /* SortingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA8128BCF7D800D12CF8 /* SortingTableViewCell.swift */; };
+		249FDA8528BD0ABC00D12CF8 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA8428BD0ABC00D12CF8 /* ChangePasswordViewController.swift */; };
+		249FDA8828BD0B0400D12CF8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA8728BD0B0400D12CF8 /* CustomButton.swift */; };
+		249FDA8A28BD0C3B00D12CF8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249FDA8928BD0C3B00D12CF8 /* CustomTextField.swift */; };
 		24E1DCBC28BBC71C009EAEC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCBB28BBC71C009EAEC9 /* AppDelegate.swift */; };
 		24E1DCBE28BBC71C009EAEC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCBD28BBC71C009EAEC9 /* SceneDelegate.swift */; };
 		24E1DCC028BBC71C009EAEC9 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCBF28BBC71C009EAEC9 /* DocumentsViewController.swift */; };
@@ -15,9 +24,23 @@
 		24E1DCD128BBC832009EAEC9 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCD028BBC832009EAEC9 /* Withable.swift */; };
 		24E1DCD328BBCFE1009EAEC9 /* Filemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCD228BBCFE1009EAEC9 /* Filemanager.swift */; };
 		24E1DCD528BBE62D009EAEC9 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCD428BBE62D009EAEC9 /* PhotoTableViewCell.swift */; };
+		24E1DCDD28BCAC18009EAEC9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 24E1DCDC28BCAC18009EAEC9 /* SnapKit */; };
+		24E1DCE028BCAC49009EAEC9 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCDF28BCAC49009EAEC9 /* KeychainPasswordItem.swift */; };
+		24E1DCE328BCB335009EAEC9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCE228BCB335009EAEC9 /* AuthViewController.swift */; };
+		24E1DCE528BCB470009EAEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCE428BCB470009EAEC9 /* AuthViewModel.swift */; };
+		24E1DCE828BCB7D5009EAEC9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1DCE728BCB7D5009EAEC9 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		249FDA6F28BCBFE100D12CF8 /* UIAllertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAllertController+Extensions.swift"; sourceTree = "<group>"; };
+		249FDA7128BCCED900D12CF8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		249FDA7828BCEB5500D12CF8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		249FDA7D28BCF25300D12CF8 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		249FDA7F28BCF72200D12CF8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		249FDA8128BCF7D800D12CF8 /* SortingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTableViewCell.swift; sourceTree = "<group>"; };
+		249FDA8428BD0ABC00D12CF8 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		249FDA8728BD0B0400D12CF8 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		249FDA8928BD0C3B00D12CF8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		24E1DCB828BBC71C009EAEC9 /* HomeworkFileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeworkFileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E1DCBB28BBC71C009EAEC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E1DCBD28BBC71C009EAEC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +51,10 @@
 		24E1DCD028BBC832009EAEC9 /* Withable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
 		24E1DCD228BBCFE1009EAEC9 /* Filemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filemanager.swift; sourceTree = "<group>"; };
 		24E1DCD428BBE62D009EAEC9 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		24E1DCDF28BCAC49009EAEC9 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		24E1DCE228BCB335009EAEC9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		24E1DCE428BCB470009EAEC9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		24E1DCE728BCB7D5009EAEC9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +62,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E1DCDD28BCAC18009EAEC9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		249FDA6E28BCBFAF00D12CF8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA8628BD0AFD00D12CF8 /* reusable */,
+				24E1DCE728BCB7D5009EAEC9 /* UIView+Extensions.swift */,
+				249FDA6F28BCBFE100D12CF8 /* UIAllertController+Extensions.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		249FDA7628BCE5F700D12CF8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA8328BD0A9F00D12CF8 /* ChangePassword */,
+				249FDA7728BCEB4800D12CF8 /* Settings */,
+				24E1DCDA28BCAB9E009EAEC9 /* PhotosList */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		249FDA7728BCEB4800D12CF8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA7828BCEB5500D12CF8 /* SettingsViewController.swift */,
+				249FDA8128BCF7D800D12CF8 /* SortingTableViewCell.swift */,
+				249FDA7F28BCF72200D12CF8 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		249FDA7A28BCF22500D12CF8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA7C28BCF24500D12CF8 /* UserDefaults */,
+				24E1DCDE28BCAC2E009EAEC9 /* KeyChain */,
+				24E1DCCF28BBC826009EAEC9 /* Extensions */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		249FDA7C28BCF24500D12CF8 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA7D28BCF25300D12CF8 /* AppStore.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		249FDA8328BD0A9F00D12CF8 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA8428BD0ABC00D12CF8 /* ChangePasswordViewController.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		249FDA8628BD0AFD00D12CF8 /* reusable */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA8728BD0B0400D12CF8 /* CustomButton.swift */,
+				249FDA8928BD0C3B00D12CF8 /* CustomTextField.swift */,
+			);
+			path = reusable;
+			sourceTree = "<group>";
+		};
 		24E1DCAF28BBC71C009EAEC9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +153,9 @@
 		24E1DCBA28BBC71C009EAEC9 /* HomeworkFileManager */ = {
 			isa = PBXGroup;
 			children = (
-				24E1DCCF28BBC826009EAEC9 /* Extensions */,
-				24E1DCBB28BBC71C009EAEC9 /* AppDelegate.swift */,
-				24E1DCBD28BBC71C009EAEC9 /* SceneDelegate.swift */,
-				24E1DCBF28BBC71C009EAEC9 /* DocumentsViewController.swift */,
-				24E1DCD428BBE62D009EAEC9 /* PhotoTableViewCell.swift */,
-				24E1DCC428BBC71E009EAEC9 /* Assets.xcassets */,
-				24E1DCC628BBC71E009EAEC9 /* LaunchScreen.storyboard */,
+				24E1DCD628BCAB5D009EAEC9 /* App */,
+				24E1DCD828BCAB7D009EAEC9 /* Core */,
+				24E1DCD928BCAB96009EAEC9 /* Scenes */,
 				24E1DCC928BBC71E009EAEC9 /* Info.plist */,
 			);
 			path = HomeworkFileManager;
@@ -79,6 +168,62 @@
 				24E1DCD228BBCFE1009EAEC9 /* Filemanager.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24E1DCD628BCAB5D009EAEC9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24E1DCBB28BBC71C009EAEC9 /* AppDelegate.swift */,
+				24E1DCBD28BBC71C009EAEC9 /* SceneDelegate.swift */,
+				24E1DCC428BBC71E009EAEC9 /* Assets.xcassets */,
+				24E1DCC628BBC71E009EAEC9 /* LaunchScreen.storyboard */,
+				249FDA7128BCCED900D12CF8 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		24E1DCD828BCAB7D009EAEC9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA7A28BCF22500D12CF8 /* util */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		24E1DCD928BCAB96009EAEC9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				249FDA6E28BCBFAF00D12CF8 /* util */,
+				24E1DCE128BCB310009EAEC9 /* Auth */,
+				249FDA7628BCE5F700D12CF8 /* TabBar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		24E1DCDA28BCAB9E009EAEC9 /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				24E1DCBF28BBC71C009EAEC9 /* DocumentsViewController.swift */,
+				24E1DCD428BBE62D009EAEC9 /* PhotoTableViewCell.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		24E1DCDE28BCAC2E009EAEC9 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				24E1DCDF28BCAC49009EAEC9 /* KeychainPasswordItem.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		24E1DCE128BCB310009EAEC9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				24E1DCE228BCB335009EAEC9 /* AuthViewController.swift */,
+				24E1DCE428BCB470009EAEC9 /* AuthViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +242,9 @@
 			dependencies = (
 			);
 			name = HomeworkFileManager;
+			packageProductDependencies = (
+				24E1DCDC28BCAC18009EAEC9 /* SnapKit */,
+			);
 			productName = HomeworkFileManager;
 			productReference = 24E1DCB828BBC71C009EAEC9 /* HomeworkFileManager.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 24E1DCAF28BBC71C009EAEC9;
+			packageReferences = (
+				24E1DCDB28BCAC18009EAEC9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 24E1DCB928BBC71C009EAEC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,12 +302,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E1DCE828BCB7D5009EAEC9 /* UIView+Extensions.swift in Sources */,
 				24E1DCC028BBC71C009EAEC9 /* DocumentsViewController.swift in Sources */,
 				24E1DCD128BBC832009EAEC9 /* Withable.swift in Sources */,
+				249FDA7228BCCED900D12CF8 /* AppState.swift in Sources */,
 				24E1DCD528BBE62D009EAEC9 /* PhotoTableViewCell.swift in Sources */,
+				249FDA8A28BD0C3B00D12CF8 /* CustomTextField.swift in Sources */,
+				249FDA8028BCF72200D12CF8 /* SettingsViewModel.swift in Sources */,
+				249FDA7E28BCF25300D12CF8 /* AppStore.swift in Sources */,
+				249FDA8828BD0B0400D12CF8 /* CustomButton.swift in Sources */,
 				24E1DCBC28BBC71C009EAEC9 /* AppDelegate.swift in Sources */,
+				24E1DCE328BCB335009EAEC9 /* AuthViewController.swift in Sources */,
 				24E1DCBE28BBC71C009EAEC9 /* SceneDelegate.swift in Sources */,
+				24E1DCE028BCAC49009EAEC9 /* KeychainPasswordItem.swift in Sources */,
 				24E1DCD328BBCFE1009EAEC9 /* Filemanager.swift in Sources */,
+				249FDA8528BD0ABC00D12CF8 /* ChangePasswordViewController.swift in Sources */,
+				249FDA7928BCEB5500D12CF8 /* SettingsViewController.swift in Sources */,
+				24E1DCE528BCB470009EAEC9 /* AuthViewModel.swift in Sources */,
+				249FDA8228BCF7D800D12CF8 /* SortingTableViewCell.swift in Sources */,
+				249FDA7028BCBFE100D12CF8 /* UIAllertController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -366,6 +530,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24E1DCDB28BCAC18009EAEC9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24E1DCDC28BCAC18009EAEC9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24E1DCDB28BCAC18009EAEC9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24E1DCB028BBC71C009EAEC9 /* Project object */;
 }
