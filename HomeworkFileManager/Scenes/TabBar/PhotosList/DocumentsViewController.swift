@@ -43,9 +43,9 @@ class DocumentsViewController: UIViewController {
                 at: FileManager.documentDirectoryURL,
                 includingPropertiesForKeys: nil)) else { return }
         if shouldSortAlphabetically {
-            self.photosURLs = photosURLs.sorted(by: { $0.path() < $1.path() })
+            self.photosURLs = photosURLs.sorted(by: { $0.path < $1.path })
         } else {
-            self.photosURLs = photosURLs.sorted(by: { $0.path() > $1.path() })
+            self.photosURLs = photosURLs.sorted(by: { $0.path > $1.path })
         }
     }
     
@@ -54,9 +54,9 @@ class DocumentsViewController: UIViewController {
             guard let self = self,
             let isOn = isOn else { return }
             if isOn {
-                self.photosURLs = self.photosURLs.sorted(by: { $0.path() < $1.path() })
+                self.photosURLs = self.photosURLs.sorted(by: { $0.path < $1.path })
             } else {
-                self.photosURLs = self.photosURLs.sorted(by: { $0.path() > $1.path() })
+                self.photosURLs = self.photosURLs.sorted(by: { $0.path > $1.path })
             }
         }
     }
@@ -81,7 +81,7 @@ class DocumentsViewController: UIViewController {
             action: #selector(addPhoto))
         
         navigationItem.rightBarButtonItem = addPhotoButton
-        navigationItem.backBarButtonItem?.isHidden = true
+        navigationItem.hidesBackButton = true
     }
     
     private func layout() {
@@ -155,7 +155,7 @@ extension DocumentsViewController: UIImagePickerControllerDelegate, UINavigation
         let data = image.pngData() else { return }
         
         do {
-            try data.write(to: FileManager.documentDirectoryURL.appending(path: name))
+            try data.write(to: FileManager.documentDirectoryURL.appendingPathComponent(name))
         } catch {
             print(error)
         }

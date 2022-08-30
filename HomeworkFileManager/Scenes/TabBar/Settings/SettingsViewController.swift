@@ -57,7 +57,7 @@ extension SettingsViewController: UITableViewDelegate {
 }
 
 // MARK: - UITableViewDelegate
-extension SettingsViewController: UITableViewDelegate {
+extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 2 }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
